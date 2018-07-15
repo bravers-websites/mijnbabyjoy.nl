@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # ENERGETISCHE BABYMASSAGE
 
 Wat is energetische babymassage?

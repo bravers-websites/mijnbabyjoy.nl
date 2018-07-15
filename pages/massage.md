@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # BABYMASSAGE
 
 Waarom is babymassage zo fijn?

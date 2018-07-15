@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # ZWANGERSCHAPSMASSAGE
 
 Zwangerschapsmassage is een weldaad voor de moeder en het ongeboren kindje.

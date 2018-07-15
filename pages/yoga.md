@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # BABY-YOGA
 
 Baby-yoga is leuk!
