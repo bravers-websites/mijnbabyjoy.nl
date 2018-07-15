@@ -1,8 +1,10 @@
 ---
 layout: default
+category: main
+title: Zwangerschapsmassage
 ---
 
-# ZWANGERSCHAPSMASSAGE
+# Zwangerschapsmassage
 
 Zwangerschapsmassage is een weldaad voor de moeder en het ongeboren kindje.
 Zwanger zijn is de mooiste tijd van je leven, maar vaak gaat zwanger zijn wel gepaard met vermoeidheid, allerlei klachtjes en pijntjes.

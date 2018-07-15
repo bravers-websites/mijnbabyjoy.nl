@@ -1,10 +1,13 @@
 ---
 layout: default
+category: main
+title: Baby-yoga
 ---
 
-# BABY-YOGA
+# Baby-yoga
 
 Baby-yoga is leuk!
+
 Het is ontspanning en plezier voor ouder en kind. 
 De yoga is gericht op het veilig en ontspannen doen van oefeningen.
 Het is een speelse manier om de band tussen ouder en kind te versterken.

@@ -18,19 +18,29 @@ $body:     #555;
 
 $fontsize: 24px;
 $ratio:    1.61803;
+$ratio2:   1.414;
+
+$breakpoint: 30rem;
 
 html, body {
 	font-family: "Josefin Slab";
 	font-size: $fontsize;
+	line-height: $ratio;
 	text-align: center;
 	color: $body;
+	font-weight: 300;
+}
+body {
+	padding-top: 1rem*$ratio*$ratio;
+	padding-bottom: 1rem*$ratio*$ratio;
 }
 h1 {
 	color: $headings;
 	margin: 1em 0;
 	font-size: 1em*$ratio;
+	font-weight: 400;
 }
-p img {
+footer img {
 	border-radius: 100%;
 	border: 1px solid #f5f5f5;
 }
@@ -53,4 +63,68 @@ a:active {
 main {
 	max-width: 32rem;
 	margin: 0 auto;
+}
+
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		margin-top: 1em*$ratio;
+		list-style: none;
+	}
+	li {
+		margin: 0;
+		padding: 0;
+	}
+	a,
+	a:link,
+	a:visited {
+		text-decoration: none;
+	}
+	a:hover,
+	a:active {
+		text-decoration: underline;
+	}
+	.current {
+		font-weight: 700;
+	}
+}
+
+header {
+	max-width: 36rem;
+	margin: 0 auto;
+	text-align: left;
+	margin-bottom: 2rem*$ratio;
+	> a {
+		&,
+		&:link,
+		&:visited,
+		&:hover,
+		&:active {
+			text-decoration: none;
+		}
+	}
+	span {
+		display: block;
+		font-weight: bold;
+		font-size: 1em*$ratio;
+		padding-top: 1rem/$ratio;
+		color: $headings;
+	}
+	img {
+		float: left;
+		margin-right: 1rem*$ratio;
+	}
+	nav ul {
+		margin: 0;
+		font-size: 1em/$ratio2;
+	}
+	li {
+		display: inline-block;
+		margin-right: 1em;
+	}
+}
+
+footer {
+	margin-top: 2rem*$ratio;
 }

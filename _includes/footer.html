@@ -1,0 +1,24 @@
+<footer>
+	<img src="{{ 'assets/babyfeet.jpg' | relative_url }}" alt="" width="150" height="150">
+
+	<nav class="inner">
+		<ul class="main">
+			{% for item in site.pages %}
+			{% if item.category == "main" %}
+				<li class="{% if item.url == page.url %}current{% endif %}">
+					<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+				</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+		<ul class="sub">
+			{% for item in site.pages %}
+			{% if item.category == "sub" %}
+				<li class="{% if item.url == page.url %}current{% endif %}">
+					<a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+				</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</nav>
+</footer>
