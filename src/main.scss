@@ -2,31 +2,52 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 ---
 
+$orange:   #F38B1F;
+$green1:   #A9CF37;
+$green2:   #8DC73F;
+$blue1:    #84D4F4;
+$blue2:    #55ACE0;
+$blue3:    #3C6EB5;
+$blue4:    #265199;
+$purple1:  #8B278D;
+$purple2:  #5F2D8E;
+$red:      #DB2031;
+
+$headings: #444;
+$body:     #555;
+
+$fontsize: 24px;
+$ratio:    1.61803;
 
 html, body {
 	font-family: "Josefin Slab";
-	font-size: 24px;
+	font-size: $fontsize;
 	text-align: center;
-	color: #444;
+	color: $body;
 }
 h1 {
+	color: $headings;
 	margin: 1em 0;
-	font-size: 1.618em;
-}
-p {
-	color: #555;
+	font-size: 1em*$ratio;
 }
 p img {
 	border-radius: 100%;
 	border: 1px solid #f5f5f5;
 }
 p:last-of-type {
-	margin-top: 4.235em;
+	margin-top: 3em*$ratio;
 }
+
 a,
-a:link,
+a:link {
+	color: $blue2;
+}
 a:visited {
-	color: #4DA9C2;
+	color: $purple1;
+}
+a:hover,
+a:active {
+	color: $blue3;
 }
 
 main {
