@@ -1,5 +1,10 @@
 <head>
-	<title>Ineke Baaij Babymassage</title>
+
+	{% if page.url == "/" %}
+		<title>Ineke Baaij Babymassage</title>
+	{% else %}
+		<title>{{ page.title }} - Ineke Baaij Babymassage</title>
+	{% endif %}
 
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
