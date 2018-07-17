@@ -20,6 +20,8 @@ $strong:   #333;
 $ratio:    1.61803;
 $ratio2:   1.414;
 
+$breakpoint: 480px;
+
 html, body {
 	font-family: "Josefin Slab";
 	font-size: 24px;
@@ -56,10 +58,9 @@ main {
 	margin: 0 auto;
 	padding: 0 1rem;
 
-	@media (max-width: 480px) {
+	@media (max-width: $breakpoint) {
 		font-size: 16px;
 	}
-
 
 	&.content {
 		text-align: left;
@@ -117,14 +118,18 @@ nav {
 		margin: 0;
 		padding: 0;
 	}
-	.sub li {
-		display: inline-block;
-		+ li {
-			&::before {
-				content: "-";
+
+	@media (min-width: $breakpoint) {
+		.sub li {
+			display: inline-block;
+			+ li {
+				&::before {
+					content: "-";
+				}
 			}
 		}
 	}
+
 	a,
 	a:link,
 	a:visited {
@@ -143,6 +148,11 @@ header {
 	padding-bottom: 1em/$ratio;
 	border-bottom: 1px solid #eee;
 	text-align: center;
+
+	@media (max-width: $breakpoint) {
+		margin-bottom: 1rem*$ratio;
+	}
+
 	> a {
 		&,
 		&:link,
@@ -174,6 +184,11 @@ header {
 
 footer {
 	margin-top: 1rem*$ratio*$ratio*$ratio*$ratio*$ratio;
+
+	@media (max-width: $breakpoint) {
+		margin-top: 1rem*$ratio*$ratio*$ratio*$ratio;
+	}
+
 	border-top: 1px solid #eee;
 
 	img {
