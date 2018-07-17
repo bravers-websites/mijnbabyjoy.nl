@@ -40,13 +40,6 @@ h1 {
 	font-size: 1em*$ratio;
 	font-weight: 400;
 }
-footer img {
-	border-radius: 100%;
-	border: 1px solid #f5f5f5;
-}
-p:last-of-type {
-	margin-top: 3em*$ratio;
-}
 
 a,
 a:link {
@@ -63,9 +56,11 @@ a:active {
 main {
 	max-width: 32rem;
 	margin: 0 auto;
+	padding: 0 1rem;
 }
 
 nav {
+	font-family: "Josefin Sans", sans-serif;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -75,6 +70,14 @@ nav {
 	li {
 		margin: 0;
 		padding: 0;
+	}
+	.sub li {
+		display: inline-block;
+		+ li {
+			&::before {
+				content: "-";
+			}
+		}
 	}
 	a,
 	a:link,
@@ -87,14 +90,17 @@ nav {
 	}
 	.current {
 		font-weight: 700;
+		color: $blue2;
 	}
 }
 
 header {
-	max-width: 36rem;
 	margin: 0 auto;
 	text-align: left;
 	margin-bottom: 2rem*$ratio;
+	padding-bottom: 1em/$ratio;
+	border-bottom: 1px solid #eee;
+	text-align: center;
 	> a {
 		&,
 		&:link,
@@ -111,20 +117,25 @@ header {
 		padding-top: 1rem/$ratio;
 		color: $headings;
 	}
-	img {
-		float: left;
-		margin-right: 1rem*$ratio;
-	}
 	nav ul {
 		margin: 0;
 		font-size: 1em/$ratio2;
 	}
 	li {
 		display: inline-block;
-		margin-right: 1em;
+		margin-right: 1em*$ratio;
 	}
 }
 
 footer {
-	margin-top: 2rem*$ratio;
+	margin-top: 1rem*$ratio*$ratio*$ratio*$ratio*$ratio;
+	border-top: 1px solid #eee;
+
+	img {
+		border-radius: 100%;
+		width: 6rem;
+		height: 6rem;
+		margin-top: -4rem;
+		border: 1em solid white;
+	}
 }
