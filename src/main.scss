@@ -57,6 +57,28 @@ main {
 	max-width: 32rem;
 	margin: 0 auto;
 	padding: 0 1rem;
+
+	strong,
+	p:first-child {
+		font-weight: 400;
+	}
+
+	p {
+		margin: 1em*$ratio 0;
+	}
+
+	img {
+		width: 6rem*$ratio2;
+		height: 6rem*$ratio2;
+		border-radius: 100%;
+		max-height: 6rem*$ratio*$ratio2;
+		max-width: 6rem*$ratio*$ratio2;
+	}
+	a > img {
+		width: unset;
+		height: unset;
+		border-radius: unset;
+	}
 }
 
 nav {
