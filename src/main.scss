@@ -13,18 +13,16 @@ $purple1:  #8B278D;
 $purple2:  #5F2D8E;
 $red:      #DB2031;
 
-$headings: #444;
-$body:     #555;
+$headings: #555;
+$body:     #444;
+$strong:   #333;
 
-$fontsize: 24px;
 $ratio:    1.61803;
 $ratio2:   1.414;
 
-$breakpoint: 30rem;
-
 html, body {
 	font-family: "Josefin Slab";
-	font-size: $fontsize;
+	font-size: 24px;
 	line-height: $ratio;
 	text-align: center;
 	color: $body;
@@ -57,14 +55,31 @@ main {
 	max-width: 32rem;
 	margin: 0 auto;
 	padding: 0 1rem;
+	&.content {
+		text-align: left;
+	}
 
-	strong,
-	p:first-child {
+	strong {
 		font-weight: 400;
+		color: $strong;
+	}
+
+	blockquote {
+		font-weight: 400;
+		color: $strong;
+		text-align: center;
+		margin: 0 1rem*$ratio*$ratio;
 	}
 
 	p {
 		margin: 1em*$ratio 0;
+	}
+	h2 {
+		font-size: 1em;
+		margin-bottom: 0;
+		+ p {
+			margin-top: 0;
+		}
 	}
 
 	img {
@@ -73,6 +88,9 @@ main {
 		border-radius: 100%;
 		max-height: 6rem*$ratio*$ratio2;
 		max-width: 6rem*$ratio*$ratio2;
+		margin: 0 auto;
+		display: block;
+		box-shadow: 0 0 1px rgba(0,0,0,0.3);
 	}
 	a > img {
 		width: unset;
@@ -110,10 +128,6 @@ nav {
 	a:active {
 		text-decoration: underline;
 	}
-	.current {
-		font-weight: 700;
-		color: $blue2;
-	}
 }
 
 header {
@@ -146,6 +160,9 @@ header {
 	li {
 		display: inline-block;
 		margin-right: 1em*$ratio;
+	}
+	.current {
+		font-weight: 700;
 	}
 }
 
