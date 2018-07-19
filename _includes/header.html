@@ -5,7 +5,8 @@
 	</a>
 	<nav>
 		<ul>
-			{% for item in site.pages %}
+			{% assign sorted_pages = site.pages | sort:"position" %}
+			{% for item in sorted_pages %}
 			{% if item.category == "main" %}
 				<li class="{% if item.url == page.url %}current{% endif %}">
 					<a href="{{ item.url | relative_url }}">{{ item.title }}</a>

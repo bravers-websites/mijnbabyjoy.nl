@@ -2,6 +2,7 @@
 layout: default
 category: main
 title: Zwangerschapsmassage
+position: 3
 ---
 
 # Zwangerschapsmassage

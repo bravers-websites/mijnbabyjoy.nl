@@ -2,6 +2,7 @@
 layout: default
 category: main
 title: Baby-yoga
+position: 2
 ---
 
 # Baby-yoga
